@@ -73,6 +73,6 @@ document.getElementById("prestige_multiplier").innerHTML = (prestige + 1).toFixe
 
     setTimeout(function(){ 
         document.getElementById("prestige_button").disabled = false;  
-    }, 1000);
+    }, 5000);
 
 }
