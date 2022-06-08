@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>NONGG Grinding Game</title>
+    <link href="nonggstyle.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>NONGG: a Not sO Normal Grinding Game (version 3.0)</h1>
+    <h3>You have <span id="pts">0.000</span> points. Your point gain rate is <span id="rate">1.000</span> including prestige.</h3>
+    <p>You have <span id="prestige">0</span> prestige, multiplying your point gain rate by <span id="prestige_multiplier">1</span>.</p>
+    <button onclick="addptsA();">Booster 1</button> <button onclick="addptsB();">Booster 2</button> <span id="boost3"></span>
+    <h3>Upgrades (can only be used once)</h3>
+    <p><button id="u1button" onclick="upA();">U01: Get booster 3 + enable prestige</button> <span id="u01">(prerequisite: have 1e+5 points)</span></p>
+    <p><span id="u02place"></span></p>
+    <p><span id="u03place"></span></p>
+    <p>More upgrades after U03 coming soon, stay tuned for another update! :)</p>
+    <h3>Options</h3>
+    <p><button id="prestige_button" onclick="addPrestige();">Reset points and rate to increase the prestige</button> (this button is made so that you can't hold enter on it)</p>
+    <script src="nonggscript.js"></script>
+  </body>
+</html>
