@@ -39,7 +39,7 @@ h3 {
 p, ol, ul, li {
 
   font-family: Verdana;
-  color: white;
+  color: black;
 }
 
 button {
@@ -61,7 +61,7 @@ form, input[type=text], input[type=number], input[type=submit] {
 
 label {
 
-  color: white;
+  color: black;
 
 }
 
@@ -74,8 +74,8 @@ th {
 }
 
 table, th, td {
-  border: 1px solid white;
-  color: white;
+  border: 1px solid black;
+  color: black;
 }
 
 .center {
@@ -93,7 +93,7 @@ table.noborder {
   border: none;
   width: 100%;
   text-align: center;
-  fill: white;
+  fill: black;
   position: sticky;
 }
 
