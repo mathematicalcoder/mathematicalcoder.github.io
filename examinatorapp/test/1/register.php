@@ -1,7 +1,7 @@
 <html>
   <head>
     <title>Online Contest Sample | Examinator</title>
-    <link href="https://onlinecontest.mathematicalcoder.repl.co/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://mathematicalcoder.github.io/examinator/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
   <h1>Online Contest Sample</h1>
