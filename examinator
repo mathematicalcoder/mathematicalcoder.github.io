@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>SMP Online Contests</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    <h1>Examinator: An online testing platform</h1>
+    <h2>Available Tests</h2>
+    <table class="center">
+    <tr>
+    <th>Contest Name</th>
+    <th>Year</th>
+    <th>Link</th>
+    </tr>
+    <tr>
+    <td>Online Contest Sample</td>
+    <td>2022</td>
+    <td><a href="test/1/register.php">Train</a></td>
+    </tr>
+    </table>
+  </body>
+</html>
