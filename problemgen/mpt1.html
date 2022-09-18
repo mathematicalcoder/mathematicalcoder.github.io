@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>MathSkillsPractice</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1><a href="index.html">MathSkillsPractice</a></h1>
+    <h3>Basic Linear Equations with One Variable (Gen ID: 1)</h3>
+    <p>Solve the equation <span id="1">null</span>x + <span id="2">null</span> = <span id="3">null</span> for x.</p>
+    <p><button onclick="revealAnswer(x);">Reveal Answer</button> The answer is <span id="ansslot">a secret until you press Reveal Answer</span>.</p>
+    <p><button onclick="location.reload();">New Problem</button></p>
+    <script>
+      a = Math.floor(Math.random() * 20) - 10;
+      b = Math.floor(Math.random() * 20) - 10;
+      x = Math.floor(Math.random() * 20) - 10;
+      c = a*x+b;
+      document.getElementById("1").innerHTML = a;
+      document.getElementById("2").innerHTML = b;
+      document.getElementById("3").innerHTML = c;
+
+      function revealAnswer(x) {
+        document.getElementById("ansslot").innerHTML = x;
+      }
+    </script>
+  </body>
+</html>
