@@ -11,23 +11,23 @@
   <body>
     <h1><a href="index.html">MathSkillsPractice</a></h1>
     <h3>Squares and Cubes in Exponents (Gen ID: 2)</h3>
-    <p>Find the value of \(<span id="1">null</span>^<span id="2">null</span>\).</p>
-    <p><button onclick="revealAnswer(c);">Reveal Answer</button> The answer is \(<span id="ansslot">\text{a secret until you press Reveal Answer}</span>\).</p>
+    <p>Find the value of <span id="eqn">null</span>.</p>
+    <p><button onclick="revealAnswer(c);">Reveal Answer</button> The answer is <span id="ansslot">\text{a secret until you press Reveal Answer}</span>.</p>
     <p><button onclick="location.reload();">New Problem</button></p>
     <script>
       b = Math.floor(Math.random() * 2) + 2;
       if (b == 2) {
-        document.getElementById("2").innerHTML = "2";
-        a = Math.floor(Math.random() * 30) + 1;
+        a = Math.floor(Math.random() * 50) + 1;
+        document.getElementById("eqn").innerHTML = "\\(" + a + "^2\\)";
       } else {
         document.getElementById("2").innerHTML = "3";
-        a = Math.floor(Math.random() * 15) + 1;
+        a = Math.floor(Math.random() * 25) + 1;
+        document.getElementById("eqn").innerHTML = "\\(" + a + "^3\\)";
       }
-      document.getElementById("1").innerHTML = a;
       c = Math.pow(a, b);
 
       function revealAnswer(c) {
-        document.getElementById("ansslot").innerHTML = c;
+        document.getElementById("ansslot").innerHTML = "\\(" + c + "\\)";
       }
     </script>
   </body>
