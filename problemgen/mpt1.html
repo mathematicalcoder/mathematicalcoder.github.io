@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width">
     <title>MathSkillsPractice</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   </head>
   <body>
     <h1><a href="index.html">MathSkillsPractice</a></h1>
     <h3>Basic Linear Equations with One Variable (Gen ID: 1)</h3>
-    <p>Solve the equation <span id="1">null</span>x + <span id="2">null</span> = <span id="3">null</span> for x.</p>
-    <p><button onclick="revealAnswer(x);">Reveal Answer</button> The answer is <span id="ansslot">a secret until you press Reveal Answer</span>.</p>
+    <p>Solve the equation \(<span id="1">null</span>x + <span id="2">null</span> = <span id="3">null</span>\) for \(x\).</p>
+    <p><button onclick="revealAnswer(x);">Reveal Answer</button> The answer is \(<span id="ansslot">\text{a secret until you press Reveal Answer}</span>\).</p>
     <p><button onclick="location.reload();">New Problem</button></p>
     <script>
       a = Math.floor(Math.random() * 20) - 10;
