@@ -11,7 +11,7 @@
   <body>
     <h1><a href="index.html">MathSkillsPractice</a></h1>
     <h3>Basic Linear Equations with One Variable (Gen ID: 1)</h3>
-    <p>Solve the equation \(<span id="1">null</span>x + <span id="2">null</span> = <span id="3">null</span>\) for \(x\).</p>
+    <p>Solve the equation <span id="eqn">null</span> for \(x\).</p>
     <p><button onclick="revealAnswer(x);">Reveal Answer</button> The answer is \(<span id="ansslot">\text{a secret until you press Reveal Answer}</span>\).</p>
     <p><button onclick="location.reload();">New Problem</button></p>
     <script>
@@ -19,12 +19,10 @@
       b = Math.floor(Math.random() * 20) - 10;
       x = Math.floor(Math.random() * 20) - 10;
       c = a*x+b;
-      document.getElementById("1").innerHTML = a;
-      document.getElementById("2").innerHTML = b;
-      document.getElementById("3").innerHTML = c;
+      document.getElementById("eqn").innerHTML = "\\(" + a + "x+" + b + "=" + c + "\\)";
 
       function revealAnswer(x) {
-        document.getElementById("ansslot").innerHTML = x;
+        document.getElementById("ansslot").innerHTML = "\\(" + x + "\\)";
       }
     </script>
   </body>
