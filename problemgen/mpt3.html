@@ -11,15 +11,14 @@
   <body>
     <h1><a href="index.html">MathSkillsPractice</a></h1>
     <h3>3-by-2 Multiplication (Gen ID: 3)</h3>
-    <p>Multiply \(<span id="1">null</span>\times<span id="2">null</span>\).</p>
-    <p><button onclick="revealAnswer(c);">Reveal Answer</button> The answer is \(<span id="ansslot">\text{a secret until you press Reveal Answer}</span>\).</p>
+    <p>Multiply <span id="eqn">null</span>.</p>
+    <p><button onclick="revealAnswer(c);">Reveal Answer</button> The answer is <span id="ansslot">???</span>.</p>
     <p><button onclick="location.reload();">New Problem</button></p>
     <script>
       a = Math.floor(Math.random() * 500) + 100;
       b = Math.floor(Math.random() * 50) + 10;
       c = a*b;
-      document.getElementById("1").innerHTML = a;
-      document.getElementById("2").innerHTML = b;
+      document.getElementById("eqn").innerHTML = "\\(" + a + "\times" + b + "\\)";
 
       function revealAnswer(c) {
         document.getElementById("ansslot").innerHTML = c;
