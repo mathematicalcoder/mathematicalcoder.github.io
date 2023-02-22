@@ -1,0 +1,11 @@
+<html>
+  <head>
+    <title>Contests | mathematicalcoder</title>
+    <link href="https://mathematicalcoder.github.io/mainsite/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Contests</h1>
+    <iframe src="https://mathematicalcoder.github.io/mainsite/menu.html" height="100" width="100%"></iframe>
+    <p>Coming soon!</p>
+  </body>
+</html>
