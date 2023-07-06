@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Puzzles | mathematicalcoder</title>
+    <link href="https://mathematicalcoder.github.io/mainsite/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Puzzles</h1>
+    <iframe src="https://mathematicalcoder.github.io/mainsite/menu.html" height="100" width="100%"></iframe>
+    <table>
+      <tr>
+      <th>Title</th>
+      <th>Type</th>
+      <th>Size</th>
+      <th>Link</th>
+      </tr>
+      <tr>
+      <td>Almost Symmetric Python Logo Design (ASPLoD)</td>
+      <td>LITS</td>
+      <td>6×6</td>
+      <td><a href="https://puzz.link/p?lits/6/6/8ajpa064pj4c">Solve</a></td>
+      </tr>
+    </table>
+  </body>
+</html>
