@@ -35,6 +35,7 @@ function upA() {
     document.getElementById("u1button").disabled = true;
     document.getElementById("prestige_button").disabled = false;
     pts -= 1e+5
+    document.getElementById("pts").innerHTML = pts.toFixed(3);
   }
 }
 
@@ -52,6 +53,7 @@ function upB() {
     document.getElementById("u03place").innerHTML = '<button id="u3button" onclick="upC();">U03: Multiply point gain by 500</button> <span id="u03">(prerequisite: have 1e+11 points)</span>'
     document.getElementById("u2button").disabled = true;
     pts -= 1e+8
+    document.getElementById("pts").innerHTML = pts.toFixed(3);
   }
 }
 
@@ -62,6 +64,7 @@ function upC() {
     document.getElementById("u03").innerHTML = "(Bought!)"
     document.getElementById("u3button").disabled = true;
     pts -= 1e+11
+    document.getElementById("pts").innerHTML = pts.toFixed(3);
   }
 }
 
