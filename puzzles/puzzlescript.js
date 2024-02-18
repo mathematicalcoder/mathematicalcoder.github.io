@@ -5,5 +5,5 @@ function ShowPuzzle(index) {
 }
 
 function ShowSoln(index) {
-  document.getElementById("solnpreview").innerHTML = '<img src='.concat(puzzlelist[index][1].concat(' height="200" width="200"></img>'));
+  document.getElementById("puzzlepreview").innerHTML = '<img src='.concat(puzzlelist[index][1].concat(' height="200" width="200"></img>'));
 }
