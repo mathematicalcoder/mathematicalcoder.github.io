@@ -1,3 +1,5 @@
+console.log("Do not cheat in the game using this console!")
+
 let pts = 0;
 let rate = 1;
 let prestige = 0;
