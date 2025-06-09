@@ -1,0 +1,44 @@
+<github-md>
+# FAQ on AoPS posting and some LaTeX stuff for MathDash reflections and problem contributions
+This is assuming you are using [my template](https://www.overleaf.com/read/nbfdbdjxrspg#16f377). To use it, make your own copy from that link.
+
+## How to add figures?
+Assuming you are using Overleaf, you can simply paste the image into the editor, and the software will auto-generate the code based on your needs. Make sure to edit the file name so that all image file names are distinct from each other. Also, if you want to place the image at its exact position in the code, put `[h]` after `\begin{figure}`.
+## How to do the yellow boxes for the problems?
+Use the following snippet:
+```latex
+\begin{Problem}{source}{}
+Problem Statement
+\end{Problem}
+```
+If you want the problem not to have a number, use `Problem*` and not `Problem` in both the `begin` and `end` commands. Also, if you want to reference the problem later on using `\ref`, you can label the problem in the blank `{}` after the source.
+## How to format proofs and solutions?
+Use the following snippet:
+```latex
+\begin{proof}
+Proof Content
+\end{proof}
+```
+If you want to label it as Solution, put `[Solution]` to the right of `\begin{proof}`. Same goes with other labels. If you want to change the QED symbol because you don't like the hollow square, use this snippet, replacing `the qed symbol` with whatever you want:
+```latex
+\renewcommand{\qed}{the qed symbol}
+```
+If you want to align it to the right, put `\hfill` before the symbol. For example:
+```latex
+\renewcommand{\qed}{\hfill\blacksquare}
+```
+for a black square aligned to the right.
+## What is a proper style for LaTeX code?
+See [here](https://web.evanchen.cc/latex-style-guide.html) and [here](https://web.evanchen.cc/handouts/LaTeXPetPeeve/LaTeXPetPeeve.pdf).
+
+## All other LaTeX FAQ
+See [here](https://web.evanchen.cc/faq-latex.html).
+
+## How to post a problem on AoPS?
+1. Go to **Middle School Math** for AMC 8 level problems, **High School Math** for short answer problems that are harder than AMC 8, and **High School Olympiads** for problems that are for proof-based olympiads.
+2. Make a new topic or thread.
+3. Put the source in the title (or source field if there is) and the problem statement in the body. If you want to (as recommended by the High School Olympiads forum rules), you may put a short description in the post title.
+4. Post your solution as a reply in the thread. It is recommended to use hide tags (`[hide=solution]hello[/hide]`, where `solution` is the cover text and `hello` is the text inside the hide tag) for the solution.
+It is recommended to use LaTeX for both the problem and solution. If your account is less than 2 weeks old, the site does not permit you to post images (including LaTeX) until your account is 2 weeks old.
+</github-md>
+<script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag/markdown-tag.js"></script> 
