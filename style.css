@@ -1,124 +1,154 @@
-body {
-  background-color: #ffffff;
+html {
+  height: 100%;
+  width: 100%;
 }
 
-.container{  
-  text-align: center;
-  width: 30px;  
-  height: 20px;  
-  padding-top: 10px;  
-}  
+body {
+  background-color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  max-width: 1000px;
+  margin: auto;
+  padding-bottom: 100px;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    width: 90%;
+  }
+}
+
+@media print {
+  .noprint {
+    display: none;
+  }
+}
+
+p {
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3 {
+  color: midnightblue;
+}
 
 h1 {
-
- font-family: Microsoft YaHei, Inter, Helvetica, sans-serif;
- font-size: 30pt;
- text-align: center;
- color: darkblue;
-
+  padding: 5px;
+  border-bottom: 3px solid royalblue;
 }
 
 h2 {
-
- font-family: Microsoft YaHei, Inter, Helvetica, sans-serif;
- font-size: 24pt;
- text-align: center;
- color: darkblue;
-
-}
-
-h3 {
-
- font-family: Microsoft YaHei, Inter, Helvetica, sans-serif;
- font-size: 15pt;
- border: 1px solid darkblue;
- color: darkblue;
-
-}
-
-p, ol, ul, li {
-
-  font-family: Microsoft YaHei, Inter, Helvetica, sans-serif;
-  color: black;
-}
-
-button {
-
-  font-size: 12pt;
-  text-align: center;
-
-}
-
-form, input[type=text], input[type=number], input[type=submit] {
-
-  text-align: center;
-  font-family: Microsoft YaHei, Inter, Helvetica, sans-serif;
-  font-size: 18pt;
-  border: 2px solid darkblue;
-  border-radius: 4px;
-
-}
-
-label {
-
-  color: black;
-
-}
-
-table {
-  font-family: Microsoft YaHei, Inter, Helvetica, sans-serif;;
-}
-
-th {
-  font-style: bold;
-}
-
-table, th, td {
-  border: 1px solid black;
-  color: black;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.center {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+  padding: 5px;
+  border-bottom: 2px solid royalblue;
 }
 
 a {
-  font-family: Microsoft YaHei, Inter, Helvetica, sans-serif;
-  color: darkblue
+  color: midnightblue;
+  transition: transform 0.2s;
 }
 
-table.noborder {
-  border: none;
+a:hover {
+  color: royalblue;
+}
+
+table {
   width: 100%;
+}
+
+th,
+td {
+  border: 2px solid slategray;
+  border-radius: 5px;
   text-align: center;
-  fill: black;
-  position: sticky;
+  transition: transform 0.2s;
+  background-color: white;
+  padding: 5px;
 }
 
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+th {
+  background-color: slategray;
+  color: white;
 }
 
-img.latex {
-	vertical-align: -0px;
+.code,
+pre,
+code {
+  font-family: ui-monospace, Menlo, Monaco, "Segoe UI Mono", "Roboto Mono",
+    "Oxygen Mono", "Ubuntu Mono", "Source Code Pro", "Fira Mono",
+    "Droid Sans Mono", "Consolas", "Courier New", monospace;
 }
 
-.text {
-        height: 500px;
-        width: 1000px;
-      }
+div.callout {
+  border: 2px solid slategray;
+  border-radius: 5px;
+  color: slategray;
+  padding: 10px;
+  overflow: auto;
+}
 
-p.footer {
+div.calloutShadow {
+  box-shadow: 2px 2px 20px 0px;
+  padding: 15px;
+  border-radius: 5px;
+}
 
- font-family: Microsoft YaHei, Inter, Helvetica, sans-serif;
- font-size: 10pt;
- border: 1px solid darkblue;
- color: darkblue;
+button,
+input,
+textarea {
+  padding: 5px;
+  background-color: white;
+  border: 1px solid slategray;
+  border-radius: 5px;
+  color: slategray;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+}
 
+input,
+textarea {
+  color: black;
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: slategray;
+  color: white;
+}
+
+.parameter {
+  font-weight: bold;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  max-height: 100px;
+  background-color: midnightblue;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow: auto;
+}
+
+img.rwrap {
+  float: right;
+  padding: 10px;
+}
+
+img.lwrap {
+  float: left;
+  padding: 10px;
 }
