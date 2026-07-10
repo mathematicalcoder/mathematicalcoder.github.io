@@ -16,6 +16,9 @@ document.getElementById("navbar").innerHTML = `
         <li class="nav-item">
           <a class="nav-link" href="/math/contests">Math contests</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/math/publications">Publications</a>
+        </li>
       </ul>
     </div>
   </div>
