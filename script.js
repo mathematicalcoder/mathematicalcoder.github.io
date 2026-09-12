@@ -14,10 +14,10 @@ document.getElementById("navbar").innerHTML = `
           <a class="nav-link" href="https://mathemolympiad.blogspot.com/">Blog</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/math/contests">Math contests</a>
+          <a class="nav-link" href="${domain}/math/contests">Math contests</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/math/publications">Publications</a>
+          <a class="nav-link" href="${domain}/math/publications">Publications</a>
         </li>
       </ul>
     </div>
