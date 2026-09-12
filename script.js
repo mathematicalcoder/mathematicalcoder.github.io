@@ -1,4 +1,4 @@
-const domain = "";
+const domain = "https://mathematicalcoder.github.io";
 
 // display navbar
 document.getElementById("navbar").innerHTML = `
